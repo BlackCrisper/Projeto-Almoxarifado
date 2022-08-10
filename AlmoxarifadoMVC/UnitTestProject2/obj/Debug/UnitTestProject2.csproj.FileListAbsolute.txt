@@ -1,0 +1,2 @@
+C:\Users\android\Desktop\Antonio\Almoxarifado\AlmoxarifadoMVC\UnitTestProject2\obj\Debug\UnitTestProject2.csproj.AssemblyReference.cache
+C:\Users\android\Desktop\Antonio\Almoxarifado\AlmoxarifadoMVC\UnitTestProject2\obj\Debug\UnitTestProject2.csproj.CoreCompileInputs.cache

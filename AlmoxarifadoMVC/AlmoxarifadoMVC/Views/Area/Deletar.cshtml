@@ -1,0 +1,25 @@
+﻿@model AlmoxarifadoMVC.Models.Area
+
+@{
+    ViewBag.Title = "Deletar";
+}
+
+<h2>Deletar</h2>
+
+<div>
+
+
+
+    <form action="/Area/ConfirmeDelete?id=@Model.AreaID" method="post">
+        <div>
+            <class ="form-group">
+                <label>Descrição</label>
+                <label>@Model.AreaDescricao</label>
+        </div>
+
+        <a href="/area/index" class="btn btn-info">Voltar</a>
+        <button class="btn btn-danger" type="submit">Deletar</button>
+
+     </form>
+</div>
+

@@ -1,0 +1,56 @@
+﻿@model IEnumerable<AlmoxarifadoMVC.Models.Area>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Cadastrar Área</h2>
+
+
+<div>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Codigo</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Opções</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+
+                <tr>
+                    <th scope="row">@item.AreaID</th>
+                    <td>@item.AreaDescricao</td>
+                  
+
+                   
+
+
+                    <td>
+
+                        <a href="/area/edit?id=@item.AreaID"><button type="button" class="btn btn-warning">Editar</button></a>
+                        <a href="/area/exibir?id=@item.AreaID"><button type="button" class="btn btn-primary">Exibir</button></a>
+                        <a href="/area/deletar?id=@item.AreaID"><button type="button" class="btn btn-danger">Deletar</button></a>
+
+                    </td>
+                </tr>
+            }
+
+
+
+
+        </tbody>
+    </table>
+
+
+</div>
+
+
+
+<p><a href="/area/criar" class="btn btn-primary">Criar</a></p>
+
+<p><a href="/home/projetos" class="btn btn-primary">Voltar &raquo;</a></p>

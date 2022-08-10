@@ -1,0 +1,51 @@
+﻿
+
+
+@{
+    ViewBag.Title = "Criar";
+}
+
+<h2>Criar</h2>
+
+<div>
+    <form action="/Colaborador/Criar" method="post">
+
+        <div>
+            <class ="form-group">
+                <label for="nome">nome</label>
+                <input type="text" class="form-control"
+                       maxlength="100" id="nome" name="nome"
+                       required />
+        </div>
+
+        <div>
+            <class ="form-group">
+                <label for="cargo">cargo</label>
+                <input type="text" class="form-control"
+                       maxlength="100" id="cargo" name="cargo"
+                       required />
+        </div>
+
+
+
+        <div>
+            <label>Área: </label>
+            <select id="area" name="area">
+
+                @foreach (var item in ViewBag.listaArea)
+                {
+                    <option value="@item.AreaID">@item.AreaDescricao</option>
+                }
+
+            </select>
+
+        </div>
+        <div>
+            <a href="/Colaborador/Index" class="btn btn-primary">Voltar</a>
+            <button class="btn btn-success" type="submit">Salvar</button>
+        </div>
+    </form>
+</div>
+    </form>
+</div>
+

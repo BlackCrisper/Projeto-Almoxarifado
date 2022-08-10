@@ -1,0 +1,60 @@
+﻿@model AlmoxarifadoMVC.Models.Colaborador
+
+
+@{
+    ViewBag.Title = "Editar";
+}
+
+<h2>Editando</h2>
+
+<div>
+    <form action="/Colaborador/Edit?id=@Model.ColID" method="post">
+        <div>
+            <class ="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control"
+                       maxlength="100" id="nome" name="nome"
+                       value="@Model.ColNome"
+                       required />
+        </div>
+        <div>
+            <class ="form-group">
+                <label for="cargo">cargo</label>
+                <input type="text" class="form-control"
+                       id="cargo" name="cargo" min="0"
+                       value="@Model.ColCargo"
+                       required />
+
+        </div>
+
+        <div>
+            <class ="form-group">
+                <label for="area">area</label>
+                <input type="text" class="form-control"
+                       id="area" name="area" min="0"
+                       value="@Model.Area.AreaDescricao"
+                       required />
+
+        </div>
+
+        <div>
+
+            <br />
+
+            <div>
+                <button type="submit" class="btn btn-success">Salvar</button>
+                <a href="/colaborador/index" class="btn btn-primary">Voltar</a>
+
+            </div>
+
+
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+

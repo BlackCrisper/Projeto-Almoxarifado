@@ -1,0 +1,39 @@
+
+        [HttpGet]
+        public ActionResult Edit(int? id)
+        {
+            Area Areaatualizar = bd.Area.ToList().Where(x => x.AreaID == id).First();
+            return View(Areaatualizar);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(int? id, string descricao)
+        {
+            Area Areaatualizar = bd.Area.ToList().Where(x => x.AreaID == id).First();
+            Areaatualizar.AreaDescricao = descricao;
+          
+
+            bd.Entry(AreaAtual).State = EntityState.Modified;
+
+            bd.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
+
+
+
+
+
+
+        ======================================================================
+
+
+        Colaborador novoColaborador = new Colaborador();
+
+            novoColaborador.ColID = Convert.ToInt32(codigo);
+            novoColaborador.ColNome = nome;
+            novoColaborador.ColCargo = cargo;
+            novoColaborador.AreaID = area;
+
+            bd.Colaborador.Add(novoColaborador);
+            bd.SaveChanges();

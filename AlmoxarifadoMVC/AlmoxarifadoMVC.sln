@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlmoxarifadoMVC", "AlmoxarifadoMVC\AlmoxarifadoMVC.csproj", "{A05136CE-AC9E-4F88-8090-EEFE943EC618}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject2", "UnitTestProject2\UnitTestProject2.csproj", "{1DD4BB40-4EF6-4555-B3E3-2F9AC9AC784A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{D3842C4F-C204-413B-893A-B04C8AD1D735}"
+	ProjectSection(SolutionItems) = preProject
+		Codigo.txt = Codigo.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A05136CE-AC9E-4F88-8090-EEFE943EC618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A05136CE-AC9E-4F88-8090-EEFE943EC618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A05136CE-AC9E-4F88-8090-EEFE943EC618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A05136CE-AC9E-4F88-8090-EEFE943EC618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DD4BB40-4EF6-4555-B3E3-2F9AC9AC784A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD4BB40-4EF6-4555-B3E3-2F9AC9AC784A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DD4BB40-4EF6-4555-B3E3-2F9AC9AC784A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD4BB40-4EF6-4555-B3E3-2F9AC9AC784A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A990D14-F31C-4763-935E-6B3EF7C21921}
+	EndGlobalSection
+EndGlobal

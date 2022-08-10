@@ -1,0 +1,29 @@
+﻿@model AlmoxarifadoMVC.Models.Colaborador
+
+@{
+    ViewBag.Title = "Deletar";
+}
+
+<h2>Deletar</h2>
+
+<div>
+
+
+
+    <form action="/Colaborador/ConfirmeDelete?id=@Model.ColID" method="post">
+        <div>
+            <class ="form-group">
+                <label>nome</label>
+                <label>@Model.ColNome</label>
+        </div>
+        <div>
+            <class ="form-group">
+                <label>cargo</label>
+                <label>@Model.ColCargo</label>
+        </div>
+
+        <a href="/Colaborador/index" class="btn btn-info">Voltar</a>
+        <button class="btn btn-danger" type="submit">Deletar</button>
+
+    </form>
+</div>

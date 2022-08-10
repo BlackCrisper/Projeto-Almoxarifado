@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AlmoxarifadoModelStoreContainer" CdmEntityContainer="BDAlmoxarifado">
+    <EntitySetMapping Name="Area">
+      <EntityTypeMapping TypeName="AlmoxarifadoModel.Area">
+        <MappingFragment StoreEntitySet="Area">
+          <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+          <ScalarProperty Name="AreaDescricao" ColumnName="AreaDescricao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Colaborador">
+      <EntityTypeMapping TypeName="AlmoxarifadoModel.Colaborador">
+        <MappingFragment StoreEntitySet="Colaborador">
+          <ScalarProperty Name="ColID" ColumnName="ColID" />
+          <ScalarProperty Name="ColNome" ColumnName="ColNome" />
+          <ScalarProperty Name="ColCargo" ColumnName="ColCargo" />
+          <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ENTRADA">
+      <EntityTypeMapping TypeName="AlmoxarifadoModel.ENTRADA">
+        <MappingFragment StoreEntitySet="ENTRADA">
+          <ScalarProperty Name="ENTID" ColumnName="ENTID" />
+          <ScalarProperty Name="ENTDATA" ColumnName="ENTDATA" />
+          <ScalarProperty Name="ENTORIGEM" ColumnName="ENTORIGEM" />
+          <ScalarProperty Name="ENTNUMERONOTA" ColumnName="ENTNUMERONOTA" />
+          <ScalarProperty Name="ENTOBSERVACAO" ColumnName="ENTOBSERVACAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemsEntrada">
+      <EntityTypeMapping TypeName="AlmoxarifadoModel.ItemsEntrada">
+        <MappingFragment StoreEntitySet="ItemsEntrada">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="ItemQuantidade" ColumnName="ItemQuantidade" />
+          <ScalarProperty Name="ItemPreco" ColumnName="ItemPreco" />
+          <ScalarProperty Name="ItemTotal" ColumnName="ItemTotal" />
+          <ScalarProperty Name="ENTID" ColumnName="ENTID" />
+          <ScalarProperty Name="ProID" ColumnName="ProID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemsSaida">
+      <EntityTypeMapping TypeName="AlmoxarifadoModel.ItemsSaida">
+        <MappingFragment StoreEntitySet="ItemsSaida">
+          <ScalarProperty Name="ItsID" ColumnName="ItsID" />
+          <ScalarProperty Name="ItsQuantidade" ColumnName="ItsQuantidade" />
+          <ScalarProperty Name="SaidaID" ColumnName="SaidaID" />
+          <ScalarProperty Name="ProID" ColumnName="ProID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Produto">
+      <EntityTypeMapping TypeName="AlmoxarifadoModel.Produto">
+        <MappingFragment StoreEntitySet="Produto">
+          <ScalarProperty Name="ProID" ColumnName="ProID" />
+          <ScalarProperty Name="ProDescricao" ColumnName="ProDescricao" />
+          <ScalarProperty Name="ProMinimo" ColumnName="ProMinimo" />
+          <ScalarProperty Name="ProMaximo" ColumnName="ProMaximo" />
+          <ScalarProperty Name="ProEstoque" ColumnName="ProEstoque" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Saida">
+      <EntityTypeMapping TypeName="AlmoxarifadoModel.Saida">
+        <MappingFragment StoreEntitySet="Saida">
+          <ScalarProperty Name="SaidaID" ColumnName="SaidaID" />
+          <ScalarProperty Name="SaidaData" ColumnName="SaidaData" />
+          <ScalarProperty Name="SaidaObeservacao" ColumnName="SaidaObeservacao" />
+          <ScalarProperty Name="ColID" ColumnName="ColID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProdutoSaida">
+      <EntityTypeMapping TypeName="AlmoxarifadoModel.ProdutoSaida">
+        <MappingFragment StoreEntitySet="ProdutoSaida">
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="Nome_do_produto" ColumnName="Nome do produto" />
+          <ScalarProperty Name="ID_da_saida" ColumnName="ID da saida" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

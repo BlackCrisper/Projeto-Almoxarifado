@@ -1,0 +1,28 @@
+﻿@model AlmoxarifadoMVC.Models.Area
+
+@{
+    ViewBag.Title = "Exibir";
+}
+
+<h2>Exibindo</h2>
+
+<div>
+
+    <form action="/Area/Exibir" method="post">
+        <div>
+            <class ="form-group">
+                <label>Descrição: </label>
+                <label>@Model.AreaDescricao</label>
+        </div>
+       
+
+        <div>
+            <p><a href="/area/index" class="btn btn-primary">Voltar &raquo;</a></p>
+
+        </div>
+
+
+
+    </form>
+
+</div>

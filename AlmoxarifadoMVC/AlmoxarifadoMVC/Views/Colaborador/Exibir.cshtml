@@ -1,0 +1,38 @@
+﻿@model AlmoxarifadoMVC.Models.Colaborador
+
+@{
+    ViewBag.Title = "Exibir";
+}
+
+<h2>Exibindo</h2>
+
+<div>
+
+    <form action="/Colaborador/Exibir" method="post">
+        <div>
+            <class ="form-group">
+                <label>Nome: </label>
+                <label>@Model.ColNome</label>
+        </div>
+        <div>
+            <class ="form-group">
+                <label>Cargo: </label>
+                <label>@Model.ColCargo</label>
+        </div>
+        <div>
+            <class ="form-group">
+                <label>Area: </label>
+                <label>@Model.Area.AreaDescricao</label>
+        </div>
+
+
+        <div>
+            <p><a href="/colaborador/index" class="btn btn-primary">Voltar &raquo;</a></p>
+
+        </div>
+
+
+
+    </form>
+
+</div>
